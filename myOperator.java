@@ -9,7 +9,9 @@ public class myOperator {
         double c = (a / 2);
         System.out.println(b); // Округление в меньшую сторону путем изменения типа на int
         System.out.println((int)c); // Сохранение типа double
-
+        if (c > 3) {
+            System.out.println("Программа выполнена корректно");
+        }
 
     }
 }
