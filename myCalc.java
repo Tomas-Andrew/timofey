@@ -7,37 +7,25 @@ public class myCalc {
         System.out.print("Введите первое число: ");
         double x = scanner.nextDouble();
         System.out.print("Введите второе число: ");
-        double y = scanner.nextDouble();
-
-        System.out.print("Выберите действие (+, -, *, /, %): ");
-        String operation = scanner.next();
-        double result = performOperation(x, y, operation);
-        System.out.println("Значение выражения: " + result);
-    }
-
-    public static double performOperation(double x, double y, String operation)
-    {
-        double result = 0;
-        switch (operation) {
+        double y = Double.parseDouble(scanner.next());
+        System.out.print("Выберите действие (+, -, *, /): ");
+        String z = scanner.next();
+        String no = "Ошибка, введите корректное действие и повторите попытку";
+        switch (z) {
             case "+":
-                result = x + y;
+                System.out.println("Значение выражения " + (x + y));
                 break;
             case "-":
-                result = x - y;
+                System.out.println("Значение выражения " + (x - y));
                 break;
             case "*":
-                result = x * y;
-                break;
-            case "%":
-                result = x % y;
+                System.out.println("Значение выражения " + (x * y));
                 break;
             case "/":
-                result = x / y;
+                System.out.println("Значение выражения " + (x / y));
                 break;
             default:
-                System.out.println("Invalid operation");
-                break;
+                System.out.println(no);
         }
-        return result;
     }
 }
