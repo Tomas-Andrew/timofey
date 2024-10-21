@@ -10,6 +10,7 @@ public class myCycleOne {
         for (int i = 0; i < length; i++) {
             array[i] = scanner.nextInt();
         }
+        scanner.close();
         int x = 10;
         int y = 20;
         int z = 30;

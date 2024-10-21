@@ -8,6 +8,7 @@ public class myCurrency {
         double a = scanner.nextDouble();
         System.out.println("Введите количество рублей");
         double b = scanner.nextDouble();
+        scanner.close();
         if (a == 0) {
             System.out.println("Ошибка");
         } else {
