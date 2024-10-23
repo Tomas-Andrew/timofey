@@ -13,9 +13,12 @@ public class myWorkingWithData {
         if (firstNumber > secondNumber) {
             maxNumber = firstNumber;
             minNumber = secondNumber;
-        } else {
+        } else if (firstNumber < secondNumber){
             maxNumber = secondNumber;
             minNumber = firstNumber;
+        } else {
+            System.out.println("Числа равны");
+            return;
         }
         System.out.println("Большее число: " + maxNumber);
         double minNumberDouble = (double) minNumber;
