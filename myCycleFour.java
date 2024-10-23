@@ -17,9 +17,9 @@ public class myCycleFour {
             }
         }
         System.out.println("вывод первой строки матрицы на экран, где каждый элемент умножается на 3:");
-            for (int j = 0; j < cols; j++) {
-                System.out.print(array[0][j] * 3 + " ");
-            }
-            scanner.close();
+        for (int j = 0; j < cols; j++) {
+            System.out.print(array[0][j] * 3 + " ");
+        }
+        scanner.close();
     }
 }
